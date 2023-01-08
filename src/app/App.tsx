@@ -8,7 +8,6 @@ import {
     IconButton,
     LinearProgress,
     Toolbar,
-    Typography
 } from '@material-ui/core'
 import {Menu} from '@material-ui/icons'
 import {TodolistsList} from '../features/TodolistsList/TodolistsList'
@@ -55,9 +54,6 @@ function App({demo = false}: PropsType) {
                         <IconButton edge="start" color="inherit" aria-label="menu">
                             <Menu/>
                         </IconButton>
-                        <Typography variant="h6">
-                            News
-                        </Typography>
                         {isLoggedIn && <Button color="inherit" onClick={logoutHandler}>Log out</Button>}
                     </Toolbar>
                     {status === 'loading' && <LinearProgress/>}
